@@ -1,0 +1,71 @@
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ist/
+[Dd]ebug+/
+[Dd]ebug-windows/
+[Dd]ebug-linux/
+[Dd]ebug-osx/
+bin/
+obj/
+
+# ASP.NET Core environment files
+appsettings.json
+appsettings.*.json
+appsettings.Development.json
+
+# .NET Core build artifacts
+*.dll
+*.exe
+*.pdb
+*.cache
+*.exe.config
+*.winmd
+
+# User-specific files
+.vs/
+.idea/
+.vscode/
+
+# JetBrains Rider
+.idea/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# User settings for Visual Studio for Mac
+.vscode/
+
+# npm packages
+node_modules/
+
+# JetBrains
+.idea/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# Dotnet Core build and test files
+*.dotCover
+.vscode/

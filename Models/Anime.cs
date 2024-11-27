@@ -10,7 +10,6 @@ namespace AnimeReviewAPI.Models
         public int Id { get; set; }
         public string Title { get; set; } = string.Empty;
         public DateTimeOffset ReleaseDate { get; set; } = DateTimeOffset.UtcNow;
-        public string Genre { get; set; } = string.Empty;
 
         public int StudioId { get; set; } 
         public Studio? Studio { get; set; } 

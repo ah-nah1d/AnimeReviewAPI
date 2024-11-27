@@ -48,7 +48,6 @@ namespace AnimeReviewAPI.Models
                         Id = 1,
                         Title = "Spirited Away",
                          ReleaseDate = new DateTimeOffset(2001, 7, 20, 0, 0, 0, TimeSpan.Zero),
-                        Genre = "Fantasy",
                         StudioId = 1
                     },
                     new Anime
@@ -56,7 +55,6 @@ namespace AnimeReviewAPI.Models
                         Id = 2,
                         Title = "One Punch Man",
                          ReleaseDate = new DateTimeOffset(2015, 10, 5, 0, 0, 0, TimeSpan.Zero),
-                        Genre = "Action",
                         StudioId = 2
                     },
                     new Anime
@@ -64,7 +62,6 @@ namespace AnimeReviewAPI.Models
                         Id = 3,
                         Title = "Toy Story",
                         ReleaseDate = new DateTimeOffset(1995, 11, 22, 0, 0, 0, TimeSpan.Zero),
-                        Genre = "Adventure",
                         StudioId = 3
                     }
                 );

@@ -38,11 +38,6 @@ namespace AnimeReviewAPI.Repository
             
             return ((decimal)reviews.Sum(r=>r.Rating)/reviews.Count());
         }
-        public  ICollection<Anime>  GetAnimes(string genre)
-        {
-            return _context.Animes.Where(a=>a.Genre==genre).OrderBy(a=>a.Id).ToList();
-            
-        }
         public ICollection<Anime> GetAnimes(){
             var animes= _context.Animes.OrderBy(a=>a.Id).ToList();
             return animes;

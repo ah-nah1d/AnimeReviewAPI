@@ -53,14 +53,5 @@ namespace AnimeReviewAPI.Controllers
                 return BadRequest(ModelState);
             return Ok(rating);
         }
-
-        [HttpGet("genre/{genre}")]
-        [ProducesResponseType(200,Type=typeof(IEnumerable<Anime>))]
-        public IActionResult GetAnimes(string genre){
-            var animes =_mapper.Map<List<AnimeDto>>(_animeRepository.GetAnimes(genre));
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-            return Ok(animes);
-        }
     }
 }

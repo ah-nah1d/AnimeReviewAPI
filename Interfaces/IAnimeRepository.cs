@@ -9,5 +9,11 @@ namespace AnimeReviewAPI.Interfaces
     public interface IAnimeRepository
     {
         ICollection<Anime> GetAnimes();
+        ICollection<Anime> GetAnimes(string genre);
+
+        Anime GetAnime(int id);
+        Anime GetAnime(string title);
+        decimal GetAnimeRating(int id);
+        bool AnimeExists(int id);
     }
 }

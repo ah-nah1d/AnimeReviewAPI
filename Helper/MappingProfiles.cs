@@ -8,11 +8,11 @@ using AutoMapper;
 
 namespace AnimeReviewAPI.Helper
 {
-    public class MappingProfiles :Profile
+    public class MappingProfiles : Profile
     {
         public MappingProfiles()
         {
-            CreateMap<Anime,AnimeDto>();
+            CreateMap<Anime, AnimeDto>();
         }
     }
 }

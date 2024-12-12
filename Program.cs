@@ -4,6 +4,8 @@ using AnimeReviewAPI.Interfaces;
 using AnimeReviewAPI.Models;
 using AnimeReviewAPI.Repository;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
+
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,7 +17,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("PostgresConnection")));
+builder.Services.AddControllers().AddJsonOptions(x =>
+                x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+    
 builder.Services.AddScoped<IAnimeRepository,AnimeRepository>();
+builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
 
 var app = builder.Build();
 

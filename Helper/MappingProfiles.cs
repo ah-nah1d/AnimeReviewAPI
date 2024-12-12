@@ -13,6 +13,9 @@ namespace AnimeReviewAPI.Helper
         public MappingProfiles()
         {
             CreateMap<Anime, AnimeDto>();
+            CreateMap<AnimeDto, Anime>();
+            CreateMap<Category, CategoryDto>();
+            CreateMap<CategoryDto, Category>();
         }
     }
 }

@@ -22,6 +22,7 @@ builder.Services.AddControllers().AddJsonOptions(x =>
     
 builder.Services.AddScoped<IAnimeRepository,AnimeRepository>();
 builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
+builder.Services.AddScoped<ICountryRepository, CountryRepository>();
 
 var app = builder.Build();
 

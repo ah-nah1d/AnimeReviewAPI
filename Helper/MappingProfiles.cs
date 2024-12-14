@@ -22,6 +22,8 @@ namespace AnimeReviewAPI.Helper
             CreateMap<StudioDto, Studio>();
             CreateMap<Reviewer, ReviewerDto>();
             CreateMap<ReviewerDto, Reviewer>();
+            CreateMap<Review, ReviewDto>();
+            CreateMap<ReviewDto, Review>();
         }
     }
 }

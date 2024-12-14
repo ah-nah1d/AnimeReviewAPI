@@ -24,6 +24,8 @@ builder.Services.AddScoped<IAnimeRepository,AnimeRepository>();
 builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
 builder.Services.AddScoped<ICountryRepository, CountryRepository>();
 builder.Services.AddScoped<IStudioRepository, StudioRepository>();
+builder.Services.AddScoped<IReviewerRepository, ReviewerRepository>();
+
 
 var app = builder.Build();
 

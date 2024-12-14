@@ -18,6 +18,9 @@ namespace AnimeReviewAPI.Helper
             CreateMap<CategoryDto, Category>();
             CreateMap<Country, CountryDto>();
             CreateMap<CountryDto, Country>();
+            CreateMap<Studio, StudioDto>();
+            CreateMap<StudioDto, Studio>();
+
         }
     }
 }

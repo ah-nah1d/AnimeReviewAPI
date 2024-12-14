@@ -51,7 +51,7 @@ namespace AnimeReviewAPI.Controllers
             return Ok(country);
         }
 
-        [HttpGet("/countries/{studioId}")]
+        [HttpGet("/country/{studioId}")]
         [ProducesResponseType(400)]
         [ProducesResponseType(200, Type = typeof(Country))]
         public IActionResult GetCountryOfAStudio(int studioId)
